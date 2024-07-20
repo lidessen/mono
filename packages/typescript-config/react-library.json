@@ -3,6 +3,9 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "module": "ES6",
+    "moduleResolution": "Bundler",
+    "types": ["@vitest/browser/providers/playwright"]
   }
 }

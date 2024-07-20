@@ -18,15 +18,18 @@ export default defineWorkspace([
       // an example of file based convention,
       // you don't have to follow it
       include: [
-        "tests/browser/**/*.{test,spec}.ts",
-        "tests/**/*.browser.{test,spec}.ts",
+        "{apps,packages}/**/tests/browser/**/*.{test,spec}.{ts,tsx}",
+        "{apps,packages}/**/tests/**/*.browser.{test,spec}.{ts,tsx}",
       ],
       name: "browser",
       browser: {
         enabled: true,
         provider: "playwright",
-        name: "chrome",
+        name: "chromium",
+        // https://playwright.dev
+        providerOptions: {},
       },
+      includeTaskLocation: true,
     },
   },
 ]);

@@ -9,7 +9,8 @@
   },
   "scripts": {
     "lint": "oxlint",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "test:browser": "vitest"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",
